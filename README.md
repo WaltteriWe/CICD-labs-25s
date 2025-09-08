@@ -1,109 +1,48 @@
-# Node.js CI/CD Demo - Student API
+# Node.js CI/CD Demo
 
 [![Node.js CI](https://github.com/WaltteriWe/CICD-labs-25s/actions/workflows/node.js.yml/badge.svg)](https://github.com/WaltteriWe/CICD-labs-25s/actions/workflows/node.js.yml)
 
-A TypeScript Express API with automated CI/CD pipeline, testing, and API documentation generation.
+TypeScript Express API with automated CI/CD pipeline.
 
-## Features
-
-- **REST API** for student management (CRUD operations)
-- **TypeScript** + **Express** + **MySQL**
-- **Automated CI/CD** with GitHub Actions
-- **Unit & Integration Testing** with Jest
-- **API Documentation** auto-generated with apiDoc
-- **Security auditing** and code quality checks
-- **Multi-version testing** (Node.js 22.x, 24.x)
-
-## Quick Start
+## Quick Setup
 
 ```bash
-# Clone and install
 git clone https://github.com/WaltteriWe/CICD-labs-25s.git
 cd CICD-labs-25s
 npm install
-
-# Setup database
 mysql -u root -p < db/create-db.sql
 cp .env.sample .env
-# Edit .env with your database credentials
-
-# Start development
 npm run dev
 ```
 
 ## API Endpoints
 
-| Method | Endpoint               | Description        |
-| ------ | ---------------------- | ------------------ |
-| GET    | `/api/v1/students`     | Get all students   |
-| GET    | `/api/v1/students/:id` | Get student by ID  |
-| POST   | `/api/v1/students`     | Create new student |
-| PUT    | `/api/v1/students/:id` | Update student     |
-| DELETE | `/api/v1/students/:id` | Delete student     |
-
-## Scripts
-
-```bash
-npm start          # Start production server
-npm run dev        # Development with auto-reload
-npm run build      # Compile TypeScript
-npm run lint       # Run ESLint
-npm test          # Run all tests
-npm run test:unit # Unit tests only
-npm run apidoc    # Generate API docs
-```
+| Method | Endpoint               | Description      |
+| ------ | ---------------------- | ---------------- |
+| GET    | `/api/v1/students`     | Get all students |
+| POST   | `/api/v1/students`     | Create student   |
+| PUT    | `/api/v1/students/:id` | Update student   |
+| DELETE | `/api/v1/students/:id` | Delete student   |
 
 ## CI/CD Pipeline
 
-The GitHub Actions workflow automatically:
-
 - Tests on Node.js 22.x and 24.x
-- Runs linting and security audits
-- Executes unit and integration tests
+- Automated linting and testing
 - Generates API documentation
-- Creates downloadable artifacts
-
-## API Documentation
-
-**Access generated docs:**
-
-1. Go to [Actions tab](https://github.com/WaltteriWe/CICD-labs-25s/actions)
-2. Click on any completed workflow
-3. Download `apidoc-node-*` artifacts
-4. Extract and open `index.html`
-
-**Or generate locally:**
-
-```bash
-npm run apidoc
-# Open docs/index.html
-```
-
-## Testing
-
-Current test coverage: **71.32%** statements
-
-```bash
-npm test              # All tests
-npm test -- --coverage # With coverage report
-npm run test:unit     # Unit tests only
-```
 
 ## Screenshots
 
-_Add screenshots here:_
+_Screenshots of workflow and API docs will be added here_
+
+_Will add screenshots of:_
 
 - GitHub Actions workflow
 - API documentation
-- Test coverage report
-- API testing examples
+- Test results
 
 ## Tech Stack
 
-- **Backend:** Node.js, Express, TypeScript, MySQL
-- **Testing:** Jest, Supertest
-- **CI/CD:** GitHub Actions
-- **Tools:** ESLint, Prettier, apiDoc
+Node.js, TypeScript, Express, MySQL, Jest, GitHub Actions
 
 ## 1. Prerequisites
 
