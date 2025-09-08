@@ -106,22 +106,22 @@ Study and do [this Node.js & GitHub actions example](https://github.com/mattpe/n
 
 1. Implement a functional CI/CD pipeline (on prototype level at least)
 
-    - Use your own project for the implementation, requirements depend on your project type
-    - Try to reach at least making automatic build when you push code to your git remote repository. If you use NodeJS for back-end application, try to run (unit) tests and deploy the application automatically.
-    - At your convenience, use GitHub (with integrated Actions) or Gitlab (with integrated CI pipelines) or TravisCI (or [any other](https://github.com/marketplace/category/continuous-integration))
-    - Once you get the pipeline done, test pushing with working code (and corrupted code too to get a build to fail to see the results).
+   - Use your own project for the implementation, requirements depend on your project type
+   - Try to reach at least making automatic build when you push code to your git remote repository. If you use NodeJS for back-end application, try to run (unit) tests and deploy the application automatically.
+   - At your convenience, use GitHub (with integrated Actions) or Gitlab (with integrated CI pipelines) or TravisCI (or [any other](https://github.com/marketplace/category/continuous-integration))
+   - Once you get the pipeline done, test pushing with working code (and corrupted code too to get a build to fail to see the results).
 
 2. Write a description about your CI/CD pipeline design and implementation including e.g.:
 
-    - How is the current implementation working?
-      - If relevant, include a link to e.g. test server where latest version of app is deployed, or to automatically generated artifacts (like apk for Android) where those can be downloaded
-    - Key features of the implementation
-    - What is still missing?
-    - Possible next steps or enhancements in future
+   - How is the current implementation working?
+     - If relevant, include a link to e.g. test server where latest version of app is deployed, or to automatically generated artifacts (like apk for Android) where those can be downloaded
+   - Key features of the implementation
+   - What is still missing?
+   - Possible next steps or enhancements in future
 
 3. Submitting the assignment
 
-    - Include a link to your implementation and the written description to your project's Planner/Trello/project board
-    - Use your CI/CD pipeline implementation as a part of your project development workflow
+   - Include a link to your implementation and the written description to your project's Planner/Trello/project board
+   - Use your CI/CD pipeline implementation as a part of your project development workflow
 
 Assignment is evaluated as a part of the project work.
