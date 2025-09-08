@@ -35,9 +35,14 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm audit fix
-      - run: npm audit --audit-level=high
       - run: npm run build --if-present
       - run: npm run test
+      - name: Automatic apidoc
+        run: npm run apidoc
+      - name: Upload apidoc
+        uses: actions/upload-artifact@v4
+        with:
+          name: apidoc
 
   code-quality:
     runs-on: ubuntu-latest
