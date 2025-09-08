@@ -259,6 +259,4 @@ _Add screenshots here:_
    ```
 
 1. Test by committing the changes and pushing them to the remote repository, check the status of the action in GitHub
-   #   C I C D - l a b s - 2 5 s 
-    
-    
+   #
